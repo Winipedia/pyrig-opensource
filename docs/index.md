@@ -42,6 +42,56 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin that combines other pyrig plugins for open-source projects.
 
 ---
+
+## Overview
+
+Drop-in [pyrig](https://github.com/Winipedia/pyrig) plugin that bundles the
+plugins recommended for a public, open-source project into a single
+dependency:
+
+- [`pyrig-codecov`](https://github.com/Winipedia/pyrig-codecov) — uploads
+  coverage reports to Codecov.
+- [`pyrig-codeql`](https://github.com/Winipedia/pyrig-codeql) — enables
+  GitHub CodeQL security scanning.
+- [`pyrig-fixtures`](https://github.com/Winipedia/pyrig-fixtures) — shares
+  pytest fixtures across dependent packages.
+- [`pyrig-public`](https://github.com/Winipedia/pyrig-public) — configures
+  GitHub features for public repositories.
+- [`pyrig-pypi`](https://github.com/Winipedia/pyrig-pypi) — publishes
+  releases to PyPI.
+
+No configuration required — installing the package as a development dependency
+is the whole setup. Then regenerate your pyrig configs as usual. Each bundled
+plugin's overrides are picked up automatically.
+
+## Installation
+
+```bash
+uv add pyrig-opensource --dev
+uv run pyrig sync
+```
+
+## Usage
+
+```bash
+uv run pyrig-opensource plugins
+```
+
+Prints every plugin bundled by this plugin, one per line, so you can confirm
+what got installed.
+
+## How it works
+
+The plugin declares `pyrig`, `pyrig-codecov`, `pyrig-codeql`,
+`pyrig-fixtures`, `pyrig-public`, and `pyrig-pypi` as runtime dependencies, so
+installing it transitively installs and activates each one's overrides. It
+adds no overrides of its own beyond the `plugins` CLI command, which reports
+the bundled plugins from a hand-maintained list.
+
+## API Reference
+
+For class- and method-level details, see the [API Reference](api.md), generated
+automatically from the source.

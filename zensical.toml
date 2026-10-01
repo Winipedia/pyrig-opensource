@@ -1,6 +1,6 @@
 [project]
 site_name = "pyrig-opensource"
-site_description = "Add your description here"
+site_description = "A pyrig plugin that combines other pyrig plugins for open-source projects."
 site_url = "https://Winipedia.github.io/pyrig-opensource"
 repo_url = "https://github.com/Winipedia/pyrig-opensource"
 edit_uri = "edit/main/docs"

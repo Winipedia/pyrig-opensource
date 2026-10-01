@@ -42,6 +42,47 @@
 
 ---
 
-> Add your description here
+> A pyrig plugin that combines other pyrig plugins for open-source projects.
 
 ---
+
+## Overview
+
+pyrig-opensource is a [pyrig](https://github.com/Winipedia/pyrig) plugin that
+bundles the plugins recommended for a public, open-source project into a
+single dependency:
+
+- [`pyrig-codecov`](https://github.com/Winipedia/pyrig-codecov) — uploads
+  coverage reports to Codecov.
+- [`pyrig-codeql`](https://github.com/Winipedia/pyrig-codeql) — enables
+  GitHub CodeQL security scanning.
+- [`pyrig-fixtures`](https://github.com/Winipedia/pyrig-fixtures) — shares
+  pytest fixtures across dependent packages.
+- [`pyrig-public`](https://github.com/Winipedia/pyrig-public) — configures
+  GitHub features for public repositories.
+- [`pyrig-pypi`](https://github.com/Winipedia/pyrig-pypi) — publishes
+  releases to PyPI.
+
+## What it adds
+
+- **One dependency instead of five** — installing pyrig-opensource pulls in
+  and activates all of the plugins above, instead of adding each one
+  individually.
+- **A `plugins` CLI command** — prints every bundled plugin so you can
+  confirm what got installed.
+
+## Usage
+
+```bash
+uv add pyrig-opensource --dev
+uv run pyrig sync
+```
+
+```bash
+uv run pyrig-opensource plugins
+```
+
+## Documentation
+
+Full documentation, including the auto-generated API reference, is available on
+the [documentation site](https://Winipedia.github.io/pyrig-opensource).

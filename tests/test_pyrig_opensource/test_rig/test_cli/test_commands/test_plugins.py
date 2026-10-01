@@ -5,7 +5,6 @@ import pyrig_codecov
 import pyrig_codeql
 import pyrig_fixtures
 import pyrig_public
-import pyrig_pypi
 import pytest
 
 from pyrig_opensource.rig.cli.commands.plugins import plugins, show_plugins
@@ -29,5 +28,4 @@ def test_plugins() -> None:
         pyrig_codeql,
         pyrig_fixtures,
         pyrig_public,
-        pyrig_pypi,
     )

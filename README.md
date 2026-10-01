@@ -60,8 +60,6 @@ single dependency:
   pytest fixtures across dependent packages.
 - [`pyrig-public`](https://github.com/Winipedia/pyrig-public) — configures
   GitHub features for public repositories.
-- [`pyrig-pypi`](https://github.com/Winipedia/pyrig-pypi) — publishes
-  releases to PyPI.
 
 ## What it adds
 

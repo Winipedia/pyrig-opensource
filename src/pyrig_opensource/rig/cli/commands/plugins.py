@@ -11,7 +11,6 @@ import pyrig_codecov
 import pyrig_codeql
 import pyrig_fixtures
 import pyrig_public
-import pyrig_pypi
 import typer
 
 
@@ -41,5 +40,4 @@ def plugins() -> tuple[ModuleType, ...]:
         pyrig_codeql,
         pyrig_fixtures,
         pyrig_public,
-        pyrig_pypi,
     )

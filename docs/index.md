@@ -60,8 +60,6 @@ dependency:
   pytest fixtures across dependent packages.
 - [`pyrig-public`](https://github.com/Winipedia/pyrig-public) — configures
   GitHub features for public repositories.
-- [`pyrig-pypi`](https://github.com/Winipedia/pyrig-pypi) — publishes
-  releases to PyPI.
 
 No configuration required — installing the package as a development dependency
 is the whole setup. Then regenerate your pyrig configs as usual. Each bundled
@@ -85,11 +83,10 @@ what got installed.
 
 ## How it works
 
-The plugin declares `pyrig`, `pyrig-codecov`, `pyrig-codeql`,
-`pyrig-fixtures`, `pyrig-public`, and `pyrig-pypi` as runtime dependencies, so
-installing it transitively installs and activates each one's overrides. It
-adds no overrides of its own beyond the `plugins` CLI command, which reports
-the bundled plugins from a hand-maintained list.
+The plugin declares the bundled plugins as runtime dependencies, so installing it
+transitively installs and activates each one's overrides. It adds no overrides
+of its own beyond the `plugins` CLI command, which reports the bundled plugins
+from a hand-maintained list.
 
 ## API Reference
 

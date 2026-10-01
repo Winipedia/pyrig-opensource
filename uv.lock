@@ -776,7 +776,7 @@ wheels = [
 
 [[package]]
 name = "pyrig-opensource"
-version = "0.1.0"
+version = "1.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "pyrig" },
@@ -784,7 +784,6 @@ dependencies = [
     { name = "pyrig-codeql" },
     { name = "pyrig-fixtures" },
     { name = "pyrig-public" },
-    { name = "pyrig-pypi" },
     { name = "pyrig-runtime" },
     { name = "typer" },
 ]
@@ -800,6 +799,7 @@ dev = [
     { name = "prek" },
     { name = "pyflakes" },
     { name = "pyrig" },
+    { name = "pyrig-pypi" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "pytest-randomly" },
@@ -823,7 +823,6 @@ requires-dist = [
     { name = "pyrig-codeql", specifier = ">=1.1.11" },
     { name = "pyrig-fixtures", specifier = ">=2.25.3" },
     { name = "pyrig-public", specifier = ">=1.1.1" },
-    { name = "pyrig-pypi", specifier = ">=3.20.47" },
     { name = "pyrig-runtime", specifier = ">=3.24.3" },
     { name = "typer", specifier = ">=0.27.2" },
 ]
@@ -839,6 +838,7 @@ dev = [
     { name = "prek", specifier = ">=0.5.4" },
     { name = "pyflakes", specifier = ">=4.0.1" },
     { name = "pyrig", specifier = ">=18.95.1" },
+    { name = "pyrig-pypi", specifier = ">=3.20.47" },
     { name = "pytest", specifier = ">=9.1.1" },
     { name = "pytest-cov", specifier = ">=7.1.0" },
     { name = "pytest-randomly", specifier = ">=5.0.0" },

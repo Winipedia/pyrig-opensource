@@ -58,6 +58,8 @@ dependency:
   GitHub CodeQL security scanning.
 - [`pyrig-fixtures`](https://github.com/Winipedia/pyrig-fixtures) — shares
   pytest fixtures across dependent packages.
+- [`pyrig-openssf`](https://github.com/Winipedia/pyrig-openssf) — configures
+  OpenSSF-related project functionality.
 - [`pyrig-public`](https://github.com/Winipedia/pyrig-public) — configures
   GitHub features for public repositories.
 
@@ -78,8 +80,8 @@ uv run pyrig sync
 uv run pyrig-opensource plugins
 ```
 
-Prints every plugin bundled by this plugin, one per line, so you can confirm
-what got installed.
+Prints every plugin bundled by this plugin in alphabetical order, one per line,
+so you can confirm what got installed.
 
 ## How it works
 

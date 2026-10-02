@@ -10,17 +10,18 @@ import pyrig
 import pyrig_codecov
 import pyrig_codeql
 import pyrig_fixtures
+import pyrig_openssf
 import pyrig_public
 import typer
 
 
 def show_plugins() -> None:
-    """Print every plugin bundled by this plugin, one per line.
+    """Print every bundled plugin alphabetically, one per line.
 
     Each line is the `str()` of the plugin's module object, e.g.
     `<module 'pyrig' from '...'>`.
     """
-    for plugin in plugins():
+    for plugin in sorted(plugins(), key=lambda m: m.__name__):
         typer.echo(plugin)
 
 
@@ -39,5 +40,6 @@ def plugins() -> tuple[ModuleType, ...]:
         pyrig_codecov,
         pyrig_codeql,
         pyrig_fixtures,
+        pyrig_openssf,
         pyrig_public,
     )

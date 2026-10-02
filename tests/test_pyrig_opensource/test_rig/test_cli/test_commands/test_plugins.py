@@ -4,6 +4,7 @@ import pyrig
 import pyrig_codecov
 import pyrig_codeql
 import pyrig_fixtures
+import pyrig_openssf
 import pyrig_public
 import pytest
 
@@ -27,5 +28,6 @@ def test_plugins() -> None:
         pyrig_codecov,
         pyrig_codeql,
         pyrig_fixtures,
+        pyrig_openssf,
         pyrig_public,
     )

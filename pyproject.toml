@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-opensource"
-version = "1.2.2"
+version = "1.2.3"
 description = "A pyrig plugin that combines other pyrig plugins for open-source projects."
 readme = "README.md"
 requires-python = ">=3.12"

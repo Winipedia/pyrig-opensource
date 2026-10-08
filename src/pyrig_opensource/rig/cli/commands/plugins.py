@@ -9,7 +9,6 @@ from types import ModuleType
 import pyrig
 import pyrig_codecov
 import pyrig_codeql
-import pyrig_fixtures
 import pyrig_openssf
 import pyrig_public
 import typer
@@ -39,7 +38,6 @@ def plugins() -> tuple[ModuleType, ...]:
         pyrig,
         pyrig_codecov,
         pyrig_codeql,
-        pyrig_fixtures,
         pyrig_openssf,
         pyrig_public,
     )

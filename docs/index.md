@@ -57,8 +57,6 @@ dependency:
   coverage reports to Codecov.
 - [`pyrig-codeql`](https://github.com/Winipedia/pyrig-codeql) — enables
   GitHub CodeQL security scanning.
-- [`pyrig-fixtures`](https://github.com/Winipedia/pyrig-fixtures) — shares
-  pytest fixtures across dependent packages.
 - [`pyrig-openssf`](https://github.com/Winipedia/pyrig-openssf) — configures
   OpenSSF-related project functionality.
 - [`pyrig-public`](https://github.com/Winipedia/pyrig-public) — configures

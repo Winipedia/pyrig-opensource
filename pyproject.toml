@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-opensource"
-version = "1.1.17"
+version = "1.2.2"
 description = "A pyrig plugin that combines other pyrig plugins for open-source projects."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -29,7 +29,6 @@ dependencies = [
   "pyrig>=18.95.1",
   "pyrig-codecov>=3.17.46",
   "pyrig-codeql>=1.1.11",
-  "pyrig-fixtures>=2.25.3",
   "pyrig-openssf>=0.1.1",
   "pyrig-public>=1.1.1",
   "typer>=0.27.2",

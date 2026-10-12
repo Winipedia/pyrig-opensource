@@ -1,6 +1,6 @@
 [project]
 name = "pyrig-opensource"
-version = "1.2.7"
+version = "1.2.10"
 description = "A pyrig plugin that combines other pyrig plugins for open-source projects."
 readme = "README.md"
 requires-python = ">=3.12"
@@ -27,12 +27,12 @@ classifiers = [
   "Typing :: Typed",
 ]
 dependencies = [
-  "pyrig>=18.95.1",
-  "pyrig-codecov>=3.17.46",
-  "pyrig-codeql>=1.1.11",
-  "pyrig-openssf>=0.1.1",
-  "pyrig-public>=1.1.1",
-  "typer>=0.27.2",
+  "pyrig>=18.108.0",
+  "pyrig-codecov>=3.17.75",
+  "pyrig-codeql>=1.1.40",
+  "pyrig-openssf>=0.1.24",
+  "pyrig-public>=1.1.31",
+  "typer>=0.27.3",
 ]
 
 [project.urls]
@@ -51,25 +51,25 @@ dev = [
   "bandit>=1.9.4",
   "deptry>=0.25.1",
   "detect-secrets>=1.5.0",
-  "mkdocstrings[python]>=1.0.6",
+  "mkdocstrings[python]>=1.0.7",
   "pre-commit-hooks>=6.0.0",
-  "prek>=0.5.4",
-  "pyflakes>=4.0.1",
-  "pyrig-plugin>=0.1.0",
+  "prek>=0.5.5",
+  "pyflakes>=4.0.3",
+  "pyrig-plugin>=1.1.9",
   "pytest>=9.1.1",
   "pytest-cov>=7.1.0",
   "pytest-randomly>=5.0.0",
   "pytest-xdist>=3.8.0",
-  "ruff>=0.16.10",
-  "rumdl>=0.2.78",
-  "ryl>=0.22.0",
+  "ruff>=0.17.0",
+  "rumdl>=0.2.79",
+  "ryl>=0.24.0",
   "shellcheck-py>=0.11.0.1",
   "shfmt-py>=4.2.0",
-  "tombi>=1.7.0",
-  "ty>=0.0.84",
-  "typos>=1.50.3",
+  "tombi>=1.8.4",
+  "ty>=0.0.86",
+  "typos>=1.51.1",
   "vulture>=2.16",
-  "zensical>=0.0.67",
+  "zensical>=0.0.70",
   "zizmor>=1.30.1",
 ]
 

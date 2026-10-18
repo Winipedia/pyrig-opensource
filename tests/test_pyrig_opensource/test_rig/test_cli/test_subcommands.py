@@ -9,8 +9,8 @@ from pyrig_opensource.rig.cli.subcommands import plugins
 
 def test_plugins(
     command_works: Callable[[FunctionType], bool],
-    command_calls_function: Callable[[FunctionType, FunctionType, Iterable[str]], bool],
+    command_calls_func: Callable[[FunctionType, FunctionType, Iterable[str]], bool],
 ) -> None:
     """Test function."""
     assert command_works(plugins)
-    assert command_calls_function(plugins, show_plugins, [])
+    assert command_calls_func(plugins, show_plugins, [])
